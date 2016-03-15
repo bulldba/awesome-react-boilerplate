@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-dark.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/jquery.githubRepoWidget.min.js"></script>
     <script src="javascripts/main.js"></script>
     <script type="text/javascript" >
+    $(function() {
         var repos = [
         "kriasoft/react-starter-kit",
         "erikras/react-redux-universal-hot-example",
@@ -44,6 +44,8 @@
             html += '<br><div class="github-widget" data-repo="'+ item +'"></div>';
         })
         $("#repo_container").html(html);
+});
+
 
     </script>
     <!--[if lt IE 9]>
@@ -90,6 +92,6 @@
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+    <script type="text/javascript" src="javascripts/jquery.githubRepoWidget.min.js"></script>
   </body>
 </html>
