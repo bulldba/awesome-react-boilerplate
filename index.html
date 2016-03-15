@@ -40,7 +40,7 @@
         "nicksp/redux-webpack-es6-boilerplate"
         ];
         var html = "";
-        repos.each(function(item, index){
+        repos.forEach(function(item, index){
             html += '<br><div class="github-widget" data-repo="'+ item +'"></div>';
         })
         $("#repo_container").html(html);
