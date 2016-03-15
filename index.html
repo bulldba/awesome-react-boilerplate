@@ -9,6 +9,43 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="javascripts/jquery.githubRepoWidget.min.js"></script>
     <script src="javascripts/main.js"></script>
+    <script type="text/javascript" >
+        var repos = [
+        "kriasoft/react-starter-kit",
+        "erikras/react-redux-universal-hot-example",
+        "mxstbr/react-boilerplate",
+        "davezuko/react-redux-starter-kit",
+        "coryhouse/react-slingshot",
+        "este/este",
+        "tj/frontend-boilerplate",
+        "webpack/react-starter",
+        "Hashnode/mern-starter",
+        "RickWong/react-isomorphic-starterkit",
+        "gaearon/react-hot-boilerplate",
+        "ryanflorence/react-project",
+        "cloverfield-tools/universal-react-boilerplate",
+        "jaredpalmer/react-production-starter",
+        "ruanyf/react-babel-webpack-boilerplate",
+        "coryhouse/react-flux-starter-kit",
+        "ericelliott/react-pure-component-starter",
+        "christianalfoni/react-app-boilerplate",
+        "petehunt/react-webpack-template",
+        "richardkall/react-starter",
+        "fortruce/react-fullstack-skeleton",
+        "rauschma/react-starter-project",
+        "mixxen/react-webpack-express",
+        "J-F-Liu/webpack-react-boilerplate",
+        "AndrejGajdos/webpack-react",
+        "egoist/react-boilerplate",
+        "nicksp/redux-webpack-es6-boilerplate"
+        ];
+        var html = "";
+        repos.each(function(item, index){
+            html += '<br><div class="github-widget" data-repo="'+ item +'"></div>';
+        })
+        $("#repo_container").html(html);
+
+    </script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -38,11 +75,10 @@
       <section>
         <h3>
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Awesome-react-boilerplate</h3>
-<div style="width: auto; max-width: 600px;">
+<div style="width: auto; max-width: 600px;" id="repo_container">
 
-	<div class="github-widget" data-repo="erikras/react-redux-universal-hot-example"></div>
-  <br>
-  <div class="github-widget" data-repo="cloverfield-tools/universal-react-boilerplate"></div>
+<div class="github-widget" data-repo="erikras/react-redux-universal-hot-example"></div>
+  
 
 </div>
 
